@@ -1,0 +1,23 @@
+###############################################################################
+# PowerDNS Authoritative – Example only
+###############################################################################
+
+# Back-ends ───────────────────────────────────────────────────────────────────
+launch=remote                          # use remote backend only
+remote-connection-string=http:url=http://checkspf:8000,timeout=4000}
+# Web API / control plane ─────────────────────────────────────────────────────
+webserver=yes
+webserver-address=0.0.0.0
+webserver-port=8081
+webserver-allow-from=0.0.0.0/0
+
+api=no
+
+# Logging ─────────────────────────────────────────────────────────────────────
+log-dns-queries=yes
+loglevel=6
+log-dns-details=yes
+
+# Disable security-poll-suffix ────────────────────────────────────────────────
+security-poll-suffix=
+
