@@ -11,7 +11,7 @@ docker run -it --name checkspf -e NS_RECORDS="my-primary-ns.example.org my-other
 1. download pdns.conf.example and docker-compose.yaml to your current directory
 2. adjust docker-compose.yaml to use your ZONE, SOA_HOSTMASTER and NS_RECORDS
 3. type `docker compose up`
-4. test query e.g. `nslookup -q=txt i.23.2.89.167._d.sendgrid.net.my.example.org`
+4. test query e.g. `nslookup -q=txt i.23.2.89.167._d.sendgrid.net.my.example.org localhost`
 
 expected response
 ````
